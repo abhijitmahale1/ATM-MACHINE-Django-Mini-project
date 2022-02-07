@@ -1,0 +1,98 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}">
+
+    <!-- Template Css Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <!--===============================================================================================-->
+
+
+
+</head>
+<body>
+
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+					<span class="login100-form-title p-b-26">
+                         <h2>Welcome To {{request.session.username}}</h2>
+                    </span>
+
+                    <span class="login100-form-title p-b-48">
+						<i class="zmdi zmdi-font"></i>
+					</span>
+
+                &emsp;
+                 <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                    <div class="login100-form-bgbtn"></div>
+          <button type="submit" class="login100-form-btn"><a href="edit">Update</a></button>
+        </div>
+    </div>
+
+                <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                    <div class="login100-form-bgbtn"></div>
+          <button type="submit" class="login100-form-btn"><a href="debit">Withdraw</a></button>
+        </div>
+    </div>
+        
+            
+<!--            <button type="submit"><a href="edit">Update</a></button> &emsp; &emsp; &emsp;-->
+<!--            <button type="submit"><a href="debit">Withdraw</a></button> &emsp; &emsp; &emsp;-->
+<!--        -->
+
+
+
+<!--            <button type="submit"><a href="login">logout</a></button> &emsp; &emsp; &emsp;-->
+
+                <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                    <div class="login100-form-bgbtn"></div>
+          <button type="submit" class="login100-form-btn"><a href="logout">logout</a></button>
+        </div>
+    </div>
+
+            </div>
+</div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
+
+
+     <!-- Template Js Files -->
+
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+    <script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+    <script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    
+
+</body>
+</html>
